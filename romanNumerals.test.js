@@ -1,5 +1,5 @@
-// import { getRomanNumeral } from "./withTDD";
-import { getRomanNumeral } from "./withoutTDD";
+import { getRomanNumeral } from "./withTDD";
+// import { getRomanNumeral } from "./withoutTDD";
 
 describe("getRomanNumeral", () => {
   it("should return I when 1 is supplied", () => {
