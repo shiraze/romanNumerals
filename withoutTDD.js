@@ -1,4 +1,4 @@
-function getRomanNumeral(n) {
+export function getRomanNumeral(n) {
   let r = n;
   const Ms = Math.floor(r / 1000);
   r -= Ms * 1000;
