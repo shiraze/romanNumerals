@@ -9,9 +9,9 @@ export function getRomanNumeral(n) {
   if (n >= 50) return "L" + getRomanNumeral(n - 50);
   if (n >= 40) return "XL" + getRomanNumeral(n - 40);
   if (n >= 10) return "X" + getRomanNumeral(n - 10);
-  if (n == 9) return "IX";
+  if (n >= 9) return "IX" + getRomanNumeral(n - 9);
   if (n >= 5) return "V" + getRomanNumeral(n - 5);
-  if (n == 4) return "IV";
+  if (n >= 4) return "IV" + getRomanNumeral(n - 4);
 
   return "I".repeat(n);
 }
