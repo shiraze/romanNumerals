@@ -49,4 +49,16 @@ describe("getRomanNumeral", () => {
   it("should return LXLVI when 96 is supplied", () => {
     expect(getRomanNumeral(96)).toBe("LXLVI");
   });
+  it("should return CC when 200 is supplied", () => {
+    expect(getRomanNumeral(200)).toBe("CC");
+  });
+  it("should return CDLXXXIII when 483 is supplied", () => {
+    expect(getRomanNumeral(483)).toBe("CDLXXXIII");
+  });
+  it("should return DMLXXXIII when 982 is supplied", () => {
+    expect(getRomanNumeral(982)).toBe("DMLXXXII");
+  });
+  it("should return MMMDCCXXIV when 3724 is supplied", () => {
+    expect(getRomanNumeral(3724)).toBe("MMMDCCXXIV");
+  });
 });
