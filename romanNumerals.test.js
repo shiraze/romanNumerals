@@ -34,4 +34,19 @@ describe("getRomanNumeral", () => {
   it("should return XXXVIII when 38 is supplied", () => {
     expect(getRomanNumeral(38)).toBe("XXXVIII");
   });
+  it("should return XL when 40 is supplied", () => {
+    expect(getRomanNumeral(40)).toBe("XL");
+  });
+  it("should return L when 50 is supplied", () => {
+    expect(getRomanNumeral(50)).toBe("L");
+  });
+  it("should return XLIX when 49 is supplied", () => {
+    expect(getRomanNumeral(49)).toBe("XLIX");
+  });
+  it("should return LXXXIV when 84 is supplied", () => {
+    expect(getRomanNumeral(84)).toBe("LXXXIV");
+  });
+  it("should return LXLVI when 96 is supplied", () => {
+    expect(getRomanNumeral(96)).toBe("LXLVI");
+  });
 });
